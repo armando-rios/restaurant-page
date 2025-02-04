@@ -2,12 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color-scheme:dark;
+  color-scheme: dark;
+}
+
+body {
+  height: 100vh;
 }
 
 header {
   display: flex;
-  padding: 24px 40px ;
+  padding: 0 40px;
+  height: 10vh;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
@@ -24,4 +29,56 @@ button {
   padding: 8px 14px;
   font-size: 16px;
   font-weight: bold;
+}
+
+#content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  gap: 10px;
+}
+
+h2 {
+  background-color: #1c1b22cc;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+h3 {
+  background: #c1c1c1cc;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+}
+
+.content-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
 }

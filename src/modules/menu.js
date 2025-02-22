@@ -1,4 +1,4 @@
-import heroImg from "../img/menu.webp"
+import heroImg from "../img/menu.jpg"
 
 export function menu() {
   const image = document.createElement("img")

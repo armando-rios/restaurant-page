@@ -1,13 +1,12 @@
 import "./style.css"
 import { home } from "./modules/home.js"
 import { menu } from "./modules/menu.js";
+import { about } from "./modules/about.js";
 
 const actions = {
   home,
   menu,
-  // about,
-  // reservations,
-  // contact,
+  about,
 };
 
 document.querySelector("nav").addEventListener("click", (event) => {
